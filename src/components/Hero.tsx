@@ -1,6 +1,6 @@
 export default function Hero () {
     return (
-        <div className="hero__container">
+        <section className="hero__container">
             <div className="hero__img_container">
                 <img className="full-img" src="images/illustration-hero.svg" alt="tablet with bookmark list" />
                 <div className="img-shadow-right"></div>
@@ -13,6 +13,6 @@ export default function Hero () {
                     <button className="btn secondary-btn">Get it on Firefox</button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -8,10 +8,10 @@ export default function Features () {
     const [selectedFeature, setSelectedFeature] = React.useState<FeatureType>(FEATURES[0]);
     
     return (
-        <div className="features__container">
+        <section className="features__container">
             <FeaturesDescription />
             <FeaturesList selectedFeature={selectedFeature} setSelectedFeature={setSelectedFeature}/>
             <FeatureDetails selectedFeature={selectedFeature} />
-        </div>
+        </section>
     )
 }
