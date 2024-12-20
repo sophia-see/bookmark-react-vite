@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$light-gray: hsl(0, 0%, 97%);
+$grayish-blue:hsl(229, 8%, 60%);
+$very-dark-blue:hsl(229, 31%, 21%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+
+$font-family: "Rubik", sans-serif;
+$regular: 400;
+$medium: 500;
+
+html, body, #root {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: $font-family;
+    font-weight: $regular;
+    font-size: 18px;
+    color: $very-dark-blue;
+}
+
+.nav__container {
+    margin: 40px 32px 84px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__img_container {
+    position: relative;
+}
+
+.hero__img_container > img {
+    width: 100%;
+    height: fit-content;
+}
+
+.hero__img_shadow {
+    background-color: $soft-blue;
+    height: 203px;
+    width: 577px;
+    position:absolute;
+    bottom: 0;
+    left: 30%;
+    border-radius: 316.5px;
+    z-index: -1;
+}
+
+.hero__content {
+    padding: 48px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__btn_containers {
+    display: flex;
+    gap: 14px;
+}
+
+.features__container {
+    margin-top: 140px;
+}
+
+.features__description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+}
+
+// REUSABLE CLASSES
+.heading-1 {
+    font-weight: $medium;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.09px;
+    text-align: center;
+}
+
+.heading-2 {
+    font-weight: $medium;
+    font-size: 24px;
+    line-height: 52px;
+    letter-spacing: -0.08px;
+    text-align: center;
+}
+
+.subheading {
+    font-weight: $regular;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    opacity: 50%;
+    color: $very-dark-blue;
+}
+
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+}
+
+.primary_btn {
+    background-color: $soft-blue;
+    color: $white;
+}
+
+.secondary_btn {
+    background-color: $light-gray;
+    color: $very-dark-blue;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
