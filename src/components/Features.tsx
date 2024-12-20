@@ -1,13 +1,14 @@
 import React from "react";
+import Tabs from "./Tabs";
 
-type FeatureType = {
+export type FeatureType = {
     title: string;
     heading: string;
     image: string;
     description: string;
 }
 
-const FEATURES = [
+export const FEATURES = [
     {
         title: "Simple Bookmarking",
         heading: "Bookmark in one click",
@@ -29,14 +30,14 @@ const FEATURES = [
 ]
 
 export default function Features () {
-    const [selectedFeature, setSelectedFeature] = React.useState<FeatureType>(FEATURES[0]);
-
     return (
         <div className="features__container">
             <div className="features__description">
                 <div className="heading-2">Features</div>
                 <div className="subheading">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</div>
             </div>
+
+            <Tabs />
         </div>
     )
 }

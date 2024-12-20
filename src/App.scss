@@ -2,16 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 $soft-blue: hsl(231, 69%, 60%);
+$soft-blue-gray: hsla(231, 69%, 60%, 0.2001);
 $soft-red: hsl(0, 94%, 66%);
 $light-gray: hsl(0, 0%, 97%);
 $grayish-blue:hsl(229, 8%, 60%);
 $very-dark-blue:hsl(229, 31%, 21%);
+$red: hsl(0, 94%, 66%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 
 $font-family: "Rubik", sans-serif;
 $regular: 400;
 $medium: 500;
+
+$border: 1px solid $soft-blue-gray;
 
 html, body, #root {
     width: 100%;
@@ -75,6 +79,17 @@ html, body, #root {
     margin: 0 32px;
 }
 
+.features__list {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px;
+}
+
+.features__list__item {
+    text-align: center;
+    padding: 21px 0;
+}
+
 // REUSABLE CLASSES
 .heading-1 {
     font-weight: $medium;
@@ -126,4 +141,24 @@ html, body, #root {
 
 .mb-32 {
     margin-bottom: 32px;
+}
+
+.border-top {
+    border-top: $border;
+}
+
+.border-bottom {
+    border-bottom: $border;
+    position: relative;
+}
+
+.selected-feature::after {
+    display: block;
+    transform: scaleX(0.5); /* Scale if needed */
+    content: '';
+    border-bottom: solid 4px $red; /* The red border */
+    position: absolute; /* Position it relative to the parent */
+    bottom: 0; /* Align it with the parent's border-bottom */
+    left: 0;
+    right: 0; /* Stretch across the element */
 }
