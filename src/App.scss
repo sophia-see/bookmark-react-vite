@@ -39,36 +39,8 @@ html, body, #root {
     align-items: center;
 }
 
-.hero__img_container {
+.hero__img_container, .feature__img_container {
     position: relative;
-}
-
-.hero__img_container > img {
-    width: 100%;
-    height: fit-content;
-}
-
-.hero__img_shadow {
-    background-color: $soft-blue;
-    height: 203px;
-    width: 577px;
-    position:absolute;
-    bottom: 0;
-    left: 30%;
-    border-radius: 316.5px;
-    z-index: -1;
-}
-
-.hero__content {
-    padding: 48px 32px 0 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero__btn_containers {
-    display: flex;
-    gap: 14px;
 }
 
 .features__container {
@@ -92,7 +64,17 @@ html, body, #root {
     padding: 21px 0;
 }
 
+.feature__img_container {
+    padding: 0 32px 37px 32px;
+}
+
 // REUSABLE CLASSES
+.full-img {
+
+    width: 100%;
+    height: fit-content;
+}
+
 .heading-1 {
     font-weight: $medium;
     font-size: 30px;
@@ -127,12 +109,12 @@ html, body, #root {
     letter-spacing: 0.25px;
 }
 
-.primary_btn {
+.primary-btn {
     background-color: $soft-blue;
     color: $white;
 }
 
-.secondary_btn {
+.secondary-btn {
     background-color: $light-gray;
     color: $very-dark-blue;
 }
@@ -141,9 +123,14 @@ html, body, #root {
     margin-top: 16px;
 }
 
+.mb-16 {
+    margin-bottom: 16px;
+}
+
 .mb-32 {
     margin-bottom: 32px;
 }
+
 
 .border-top {
     border-top: $border;
@@ -170,4 +157,36 @@ html, body, #root {
 
 .selected-feature.selected::after {
     transform: scaleX(0.5);
+}
+
+.img-shadow {
+    background-color: $soft-blue;
+    height: 203px;
+    width: 577px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 316.5px;
+    z-index: -1;
+}
+
+.img-shadow-right {
+    @extend .img-shadow;
+    left: 30%;
+}
+
+.img-shadow-left {
+    @extend .img-shadow;
+    right: 20%;
+}
+
+.content {
+    padding: 48px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-containers {
+    display: flex;
+    gap: 14px;
 }
