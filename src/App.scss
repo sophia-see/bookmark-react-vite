@@ -154,11 +154,11 @@ html, body, #root {
 
 .selected-feature::after {
     display: block;
-    transform: scaleX(0.5); /* Scale if needed */
+    transform: scaleX(0.5);
     content: '';
-    border-bottom: solid 4px $red; /* The red border */
-    position: absolute; /* Position it relative to the parent */
-    bottom: 0; /* Align it with the parent's border-bottom */
+    border-bottom: solid 4px $red;
+    position: absolute; 
+    bottom: 0; 
     left: 0;
-    right: 0; /* Stretch across the element */
+    right: 0;
 }

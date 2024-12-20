@@ -1,5 +1,3 @@
-import React from "react";
-import Tabs from "./Tabs";
 
 export type FeatureType = {
     title: string;
@@ -28,16 +26,3 @@ export const FEATURES = [
         description: "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button."
     },
 ]
-
-export default function Features () {
-    return (
-        <div className="features__container">
-            <div className="features__description">
-                <div className="heading-2">Features</div>
-                <div className="subheading">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</div>
-            </div>
-
-            <Tabs />
-        </div>
-    )
-}

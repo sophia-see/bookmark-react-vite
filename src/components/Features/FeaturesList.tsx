@@ -1,8 +1,8 @@
 import React from "react";
-import { FEATURES, FeatureType } from "./Features"
+import { FEATURES, FeatureType } from "./data";
 
 
-export default function Tabs () {
+export default function FeaturesList () {
     const [selectedFeature, setSelectedFeature] = React.useState<FeatureType>(FEATURES[0]);
     
     const handleClickFeature = ({index}: {index: number}) => {

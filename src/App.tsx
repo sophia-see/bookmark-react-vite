@@ -1,5 +1,5 @@
 import './App.scss'
-import Features from './components/Features'
+import Features from './components/Features/Features'
 import Header from './components/Header'
 import Hero from './components/Hero'
 
