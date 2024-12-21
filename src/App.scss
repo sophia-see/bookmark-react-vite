@@ -95,7 +95,26 @@ html, body, #root {
     margin: 49px 0 32px 0;
 }
 
+.faqs__container {
+    margin: 0 32px;
+}
+
+.faqs__description {
+    margin-top: 100px;
+}
+
+.faqs__list {
+    display: flex;
+    flex-direction: column;
+}
+
 // REUSABLE CLASSES
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .full-img {
     width: 100%;
     height: fit-content;
@@ -124,6 +143,12 @@ html, body, #root {
     letter-spacing: 0.25px;
 }
 
+.heading-4 {
+    font-weight: $regular;
+    font-size: 15px;
+    line-height: 32px;
+}
+
 .subheading-1 {
     font-weight: $regular;
     font-size: 15px;
@@ -140,6 +165,13 @@ html, body, #root {
     text-align: center;
     opacity: 50%;
     color: $very-dark-blue;
+}
+
+.paragraph {
+    font-weight: $regular;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.14px;
 }
 
 .btn {
@@ -161,8 +193,28 @@ html, body, #root {
     color: $very-dark-blue;
 }
 
+.self-center {
+    place-self: center;
+}
+
 .m-24 {
     margin: 24px;
+}
+
+.mt-64 {
+    margin-top: 64px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mt-26 {
+    margin-top: 26px;
+}
+
+.mt-20 {
+    margin-top: 20px;
 }
 
 .mt-16 {
@@ -177,10 +229,17 @@ html, body, #root {
     margin-bottom: 16px;
 }
 
+.mb-24 {
+    margin-bottom: 24px;
+}
+
 .mb-32 {
     margin-bottom: 32px;
 }
 
+.pb-12 {
+    padding-bottom: 12px;
+}
 
 .border-top {
     border-top: $border;
@@ -254,4 +313,8 @@ html, body, #root {
     right: 0;
     left: 0;
     transform: scaleX(2.5); /* Stretches the dots horizontally */
+}
+
+.hidden {
+    display: none;
 }
