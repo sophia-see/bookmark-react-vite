@@ -68,9 +68,35 @@ html, body, #root {
     padding: 0 32px 37px 32px;
 }
 
+.extensions__description {
+    padding: 77px 32px 0 32px;
+}
+
+.extensions__list {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 48px;
+    gap: 40px;
+}
+
+.extension__card {
+    box-shadow: 0 10px 20px -5px $soft-blue-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.extension__img {
+    width: 102px;
+    height: 100px;
+    margin: 49px 0 32px 0;
+}
+
 // REUSABLE CLASSES
 .full-img {
-
     width: 100%;
     height: fit-content;
 }
@@ -91,10 +117,26 @@ html, body, #root {
     text-align: center;
 }
 
-.subheading {
+.heading-3 {
+    font-weight: $medium;
+    font-size: 20px;
+    line-height: auto;
+    letter-spacing: 0.25px;
+}
+
+.subheading-1 {
     font-weight: $regular;
     font-size: 15px;
     line-height: 25px;
+    text-align: center;
+    opacity: 50%;
+    color: $very-dark-blue;
+}
+
+.subheading-2 {
+    font-weight: $regular;
+    font-size: 15px;
+    line-height: 28px;
     text-align: center;
     opacity: 50%;
     color: $very-dark-blue;
@@ -119,8 +161,16 @@ html, body, #root {
     color: $very-dark-blue;
 }
 
+.m-24 {
+    margin: 24px;
+}
+
 .mt-16 {
     margin-top: 16px;
+}
+
+.mb-6 {
+    margin-bottom: 6px;
 }
 
 .mb-16 {
@@ -193,4 +243,15 @@ html, body, #root {
 
 .img-container {
     overflow: hidden;
+    transition: all 1s ease;
+}
+
+.dotted-divider::after {
+    display: block;
+    content: '';
+    border-bottom: 4px dotted $soft-blue-gray;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transform: scaleX(2.5); /* Stretches the dots horizontally */
 }
