@@ -7,7 +7,7 @@ interface FeatureDetailsProps {
 export default function FeatureDetails ({selectedFeature}: FeatureDetailsProps) {
     return (
         <div className="feature__details">
-            <div className="feature__img_container">
+            <div className="feature__img_container img-container">
                 <img src={selectedFeature.image} alt="" className="full-img" />
                 <div className="img-shadow-left"></div>
             </div>
