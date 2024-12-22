@@ -7,6 +7,7 @@ $soft-red: hsl(0, 94%, 66%);
 $light-gray: hsl(0, 0%, 97%);
 $grayish-blue:hsl(229, 8%, 60%);
 $very-dark-blue:hsl(229, 31%, 21%);
+$very-dark-blue-gray:hsla(229, 31%, 21%, 0.2501);
 $red: hsl(0, 94%, 66%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
@@ -108,6 +109,46 @@ html, body, #root {
     flex-direction: column;
 }
 
+.subscription__container {
+    display: flex;
+    flex-direction: column;
+    background-color: $soft-blue;
+    margin-top: 123px;
+    padding: 60px 32px;
+}
+
+.subscription__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.subscription__email {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+}
+
+::placeholder {
+    color: $very-dark-blue-gray;
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: $very-dark-blue-gray;
+}
+
 // REUSABLE CLASSES
 .flex {
     display: flex;
@@ -115,7 +156,7 @@ html, body, #root {
     justify-content: space-between;
 }
 
-.full-img {
+.full-width {
     width: 100%;
     height: fit-content;
 }
@@ -149,6 +190,20 @@ html, body, #root {
     line-height: 32px;
 }
 
+.heading-5 {
+    font-weight: $medium;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 4.62px;
+}
+
+.heading-6 {
+    font-weight: $medium;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.08px;
+}
+
 .subheading-1 {
     font-weight: $regular;
     font-size: 15px;
@@ -174,6 +229,14 @@ html, body, #root {
     letter-spacing: 0.14px;
 }
 
+.text-white {
+    color: $white;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .btn {
     padding: 10px 16px;
     border: none;
@@ -191,6 +254,11 @@ html, body, #root {
 .secondary-btn {
     background-color: $light-gray;
     color: $very-dark-blue;
+}
+
+.tertiary-btn {
+    background-color: $red;
+    color: $white;
 }
 
 .self-center {

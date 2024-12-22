@@ -2,7 +2,7 @@ export default function Hero () {
     return (
         <section className="hero__container">
             <div className="hero__img_container img-container">
-                <img className="full-img" src="images/illustration-hero.svg" alt="tablet with bookmark list" />
+                <img className="full-width" src="images/illustration-hero.svg" alt="tablet with bookmark list" />
                 <div className="img-shadow-right"></div>
             </div>
             <div className="content">

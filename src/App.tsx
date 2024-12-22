@@ -4,6 +4,7 @@ import FAQs from './components/FAQs/FAQs'
 import Features from './components/Features/Features'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Subscription from './components/Subscription/Subscription'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Features />
       <Extensions />
       <FAQs />
+      <Subscription />
     </>
   )
 }

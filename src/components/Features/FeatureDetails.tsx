@@ -8,7 +8,7 @@ export default function FeatureDetails ({selectedFeature}: FeatureDetailsProps) 
     return (
         <div className="feature__details">
             <div className="feature__img_container img-container">
-                <img src={selectedFeature.image} alt="" className="full-img" />
+                <img src={selectedFeature.image} alt="" className="full-width" />
                 <div className="img-shadow-left"></div>
             </div>
             <div className="content">
