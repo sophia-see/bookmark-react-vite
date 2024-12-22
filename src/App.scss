@@ -131,7 +131,17 @@ html, body, #root {
     margin-top: 32px;
 }
 
+.subscription__input {
+    width: 100%;
+}
+
+.subscription__input.error {
+    background-color: $red;
+    border-radius: 5px;
+}
+
 .subscription__email {
+    width: 100%;
     border-radius: 5px;
     padding: 10px 20px;
     border: none;
@@ -385,4 +395,21 @@ html, body, #root {
 
 .hidden {
     display: none;
+}
+
+.input-error {
+    border: 2px solid $red;   
+}
+
+.error-message {
+    padding: 4px 12px;
+    font-size: 10px;
+    letter-spacing: 0.25px;
+    line-height: auto;
+    font-weight: $medium;
+}
+
+::selection {
+    background: $soft-blue; /* Highlight background color */
+    color: #fff;      /* Highlight text color */
 }
