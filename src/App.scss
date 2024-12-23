@@ -159,6 +159,39 @@ html, body, #root {
     color: $very-dark-blue-gray;
 }
 
+.footer__container {
+    background-color: $very-dark-blue;
+    fill: $white;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    height: 100%;
+}
+
+.footer__links {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer__links li {
+    color: $white;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 1.73px;
+    text-align: center;
+}
+
+.footer__contacts {
+    display: flex;
+    gap: 40px;
+}
+
 // REUSABLE CLASSES
 .flex {
     display: flex;
