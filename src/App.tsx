@@ -5,6 +5,7 @@ import Features from './components/Features/Features'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import MenuDrawer from './components/MenuDrawer'
 import Subscription from './components/Subscription/Subscription'
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
       <FAQs />
       <Subscription />
       <Footer />
+
+      <MenuDrawer />
     </>
   )
 }

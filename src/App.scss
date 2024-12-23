@@ -288,9 +288,11 @@ html, body, #root {
     padding: 10px 16px;
     border: none;
     border-radius: 5px;
+    font-weight: $medium;
     font-size: 14px;
     line-height: 28px;
     letter-spacing: 0.25px;
+    box-shadow: 0 10px 20px -5px $soft-blue-gray;
 }
 
 .primary-btn {
