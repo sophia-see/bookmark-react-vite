@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.scss'
 import Extensions from './components/Extensions/Extensions'
 import FAQs from './components/FAQs/FAQs'
@@ -9,9 +10,15 @@ import MenuDrawer from './components/MenuDrawer'
 import Subscription from './components/Subscription/Subscription'
 
 function App() {
+  const [isMenuOpened, setIsMenuOpened] = React.useState<boolean>(false);
+
+  const appClasses = React.useMemo(() => {
+    return isMenuOpened ? "no-scroll" : ""
+  }, [isMenuOpened])
+  
   return (
-    <>
-      <Header />
+    <div className={appClasses}>
+      <Header setIsMenuOpened={setIsMenuOpened}/>
       <Hero />
       <Features />
       <Extensions />
@@ -19,8 +26,8 @@ function App() {
       <Subscription />
       <Footer />
 
-      <MenuDrawer />
-    </>
+      {isMenuOpened ? <MenuDrawer setIsMenuOpened={setIsMenuOpened}/> : <></>}
+    </div>
   )
 }
 

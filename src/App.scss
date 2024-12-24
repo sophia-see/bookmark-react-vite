@@ -196,6 +196,46 @@ html, body, #root {
     gap: 40px;
 }
 
+.menu__drawer {
+    width: 100dvw;
+    height: 100dvh;
+    color: $white;
+    background-color: $very-dark-blue;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 95%;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list {
+    padding: 40px 0 24px 0;
+}
+
+.menu__link {
+    color: $white;
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 2.31px;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
 // REUSABLE CLASSES
 .flex {
     display: flex;
@@ -310,6 +350,17 @@ html, body, #root {
     color: $white;
 }
 
+.login-btn {
+    background-color: transparent;
+    color: $white;
+    border: 2px solid $white;
+    font-weight: $medium;
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 2.31px;
+    padding: 15px 0;
+}
+
 .self-center {
     place-self: center;
 }
@@ -365,6 +416,10 @@ html, body, #root {
 .border-bottom {
     border-bottom: $border;
     position: relative;
+}
+
+.border-white {
+    border-color: hsl(0, 0, 100%, 15%)
 }
 
 .selected-feature::after {
